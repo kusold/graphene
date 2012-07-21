@@ -91,7 +91,7 @@ global $graphene_settings;
 
         <div id ="secondary-nav">
           <div id="logo" class="grid_4">
-            <a href="/">
+          <a href="<?php echo site_url(); ?>" title="">
               <img src="<?php echo get_bloginfo('template_directory');?>/images/gercf_logo.png">
             </a>
           </div>

@@ -4858,15 +4858,15 @@ body{background:none;
 #logo{color:#fff;}
 
 div.anythingSlider.activeSlider .anythingWindow {border:none;}
-div.anythingSlider { padding: 10px 45px 28px 30px !important;}
+div.anythingSlider { padding: 20px 45px 28px 120px !important;}
 .anythingBase{ font-size: 2.0em; line-height: 1.25em; color: #fff}
 .header_title{ display: none;}
-
+div.anythingSlider.blockquote {display: inline;}
 
 #logo{color:#000;}
 #logo a{padding:10px 0 10px 10px;display:block;}
 #donate{padding:45px 0 0 0;text-align:right;}
-#donate a{display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;
+#donate a, #donate-widget a {display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;
 
 font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;

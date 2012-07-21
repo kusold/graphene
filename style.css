@@ -4844,11 +4844,14 @@ h3.author-post-list {
 #top_search {overflow:hidden;float:left;margin-top:0;}
 #top_search input {float:none;display:inline;margin-right:3px;}
 #top_search button {float:none;display:inline;vertical-align:middle;}
+
 #logo{color:#fff;}
 
 div.anythingSlider.activeSlider .anythingWindow {border:none;}
-.anythingBase{ font-size: 2.5em; line-height: 1.5em;}
+div.anythingSlider { padding: 10px 45px 28px 30px !important;}
+.anythingBase{ font-size: 2.0em; line-height: 1.25em; color: #fff}
 .header_title{ display: none;}
+
 
 #logo{color:#000;}
 #logo a{padding:10px 0 10px 10px;display:block;}

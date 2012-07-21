@@ -1396,6 +1396,10 @@ a:hover {
 
 	text-transform: uppercase;
 
+	list-style-type: none;
+
+	display: inline;
+
 }
 
 #secondary-menu > li:first-child {
@@ -1432,7 +1436,7 @@ a:hover {
 
 #secondary-menu > li.current-menu-ancestor {
 
-	/* background: url(images/sprite_h.png) left -1014px repeat-x #dfdfdf; */
+	background: url(images/sprite_h.png) left -1014px repeat-x #dfdfdf;
 
 }
 

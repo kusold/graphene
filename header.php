@@ -113,7 +113,7 @@ global $graphene_settings;
         wp_nav_menu( apply_filters( 'graphene_secondary_menu_args', $args ) );
         ?>
           <div id="donate" class="grid_3">
-            <a href="http://galvin.local/?page_id=9">Donate</a>
+            <a href="http://galvin.local/?page_id=9">Donate Here</a>
           </div>
             </div>
         </div>

@@ -4838,7 +4838,7 @@ h3.author-post-list {
 #SearchRssContainer{position:absolute;right:0;}
 #profiles{padding-top:0;margin-top:-4px;}
 #secondary-menu{padding:57px 0 0 0;text-align:right;}
-#secondary-menu li a{color:#666;font-weight:bold;font-size:14px;}
+#secondary-menu li a{color:#404040;font-weight:bold;font-size:14px;}
 #secondary-nav{clear:both;overflow:hidden}
 #secondary-nav ul li{clear:both;overflow:hidden}
 #top_search {overflow:hidden;float:left;margin-top:0;}
@@ -4856,3 +4856,14 @@ div.anythingSlider.activeSlider .anythingWindow {border:none;}
 #donate a{display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;}
 
 #header .header_title{color:#fff;}
+
+#header-menu{margin:0;}
+#header-menu li{text-align:center;width:240px;height:80px;margin:0;}
+
+/* TODO: This wont work in IE8 and below */
+#header-menu li:nth-child(1){background:#10c8cc}
+#header-menu li:nth-child(2){background:#87d92d}
+#header-menu li:nth-child(3){background:#923fff}
+#header-menu li:nth-child(4){background:#15da9e}
+
+#header-menu li a{padding:0;display:block;height:80px;font-size:16px;line-height:18px;padding:20px 0 0 0;}

@@ -60,8 +60,8 @@ global $graphene_settings;
 
         <div id="top-bar">
 
-          <div id="logo" class="grid_11">
-            [ logo ]
+          <div id="space" class="grid_11">
+            &nbsp;
           </div>
 
           <?php if ( ( $search_box_location = $graphene_settings['search_box_location'] ) && $search_box_location == 'top_bar' || $search_box_location == '' ) : ?>
@@ -97,19 +97,22 @@ global $graphene_settings;
 
           
 
-            <?php do_action( 'graphene_top_bar' ); ?>
+        <?php do_action( 'graphene_top_bar' ); ?>
 
-            <div id ="secondary-nav">
+        <div id ="secondary-nav">
+          <div id="logo" class="grid_5">
+            logo
+          </div>
                 <?php
 
         /* Secondary menu */
 
         $args = array(
             'container' => 'div',
-            'container_id' => 'secondary-menu-wrap',
-            'container_class' => 'clearfix',
+            'container_id' => '',
+            'container_class' => 'grid_8',
             'menu_id' => 'secondary-menu',
-            'menu_class' => 'menu clearfix',
+            'menu_class' => 'menu',
             'fallback_cb' => 'none',
             'depth' => 5,
             'theme_location' => 'secondary-menu',

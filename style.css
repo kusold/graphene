@@ -4826,7 +4826,7 @@ h3.author-post-list {
 
 
 /* GiveCamp Changes */
-html{margin: 0 !important;}
+html{margin: 0 !important;background-color: #005585;}
 body{background:none;
   background-color: #005585;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#005585)); /* Saf4+, Chrome */

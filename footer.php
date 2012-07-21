@@ -29,17 +29,15 @@ global $graphene_settings;
 
 </div><!-- #content -->
 
-<?php /* Get the footer widget area */ ?>
-<?php get_template_part('sidebar', 'footer'); ?>
 
 <?php do_action('graphene_before_footer'); ?>
 
-<div id="footer" class="clearfix">
+<div id="footer" class="container_16">
     
 
 	<?php if ( has_nav_menu( 'footer-menu' ) || ! $graphene_settings['hide_return_top'] ) : ?>
-	<div class="footer-menu-wrap">
-    	<ul id="footer-menu" class="clearfix">
+	<div class="footer-menu-wrap grid_16">
+    	<ul id="footer-menu" class="">
 			<?php /* Footer menu */
             $args = array(
                 'container' => '',
@@ -57,9 +55,11 @@ global $graphene_settings;
     </div>
     <?php endif; ?>
 	
+  <?php /* Get the footer widget area */ ?>
+
+  <?php get_template_part('sidebar', 'footer'); ?>
     <?php if ( ! $graphene_settings['hide_copyright'] ) : ?>
-    <div id="copyright">
-    	<h3><?php _e('Copyright', 'graphene'); ?></h3>
+    <div id="copyright" class="grid_16">
 		<?php if ( $graphene_settings['copy_text'] == '' && ! $graphene_settings['show_cc'] ) : ?>
             <p>
             <?php printf( '&copy; %1$s %2$s.', date( 'Y' ), get_bloginfo( 'name' ) ); ?>
@@ -82,7 +82,9 @@ global $graphene_settings;
     	<?php do_action('graphene_copyright'); ?>
     </div>
 <?php endif; ?>
-    
+    
+
+
     <?php do_action('graphene_footer'); ?>
 </div><!-- #footer -->
 

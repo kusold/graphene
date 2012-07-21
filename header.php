@@ -60,38 +60,42 @@ global $graphene_settings;
 
         <div id="top-bar">
 
+          <div id="logo" class="grid_11">
+            [ logo ]
+          </div>
 
-                <?php do_action( 'graphene_before_feed_icon' ); ?>
+          <?php if ( ( $search_box_location = $graphene_settings['search_box_location'] ) && $search_box_location == 'top_bar' || $search_box_location == '' ) : ?>
 
-				<div id="profiles" class="clearfix gutter-left">
+              <div id="top_search" class="grid_4">
 
-                    <?php do_action( 'graphene_social_profiles' ); ?>
+                  <?php get_search_form(); ?>
 
-                </div>
+                  <?php do_action( 'graphene_top_search' ); ?>
 
-            <?php
+              </div>
 
-            /**
+          <?php endif; ?>
 
-             * Retrieves our custom search form.
+          <?php do_action( 'graphene_before_feed_icon' ); ?>
 
-             */
+          <div id="profiles" class="grid_1">
 
-            ?>
+              <?php do_action( 'graphene_social_profiles' ); ?>
 
-            <?php if ( ( $search_box_location = $graphene_settings['search_box_location'] ) && $search_box_location == 'top_bar' || $search_box_location == '' ) : ?>
+          </div>
 
-                <div id="top_search" class="grid_4">
+          <?php
 
-                    <?php get_search_form(); ?>
+          /**
 
-                    <?php do_action( 'graphene_top_search' ); ?>
+           * Retrieves our custom search form.
 
-                </div>
+           */
 
-            <?php endif; ?>
+          ?>
 
-            
+
+          
 
             <?php do_action( 'graphene_top_bar' ); ?>
 
@@ -101,23 +105,14 @@ global $graphene_settings;
         /* Secondary menu */
 
         $args = array(
-
             'container' => 'div',
-
             'container_id' => 'secondary-menu-wrap',
-
             'container_class' => 'clearfix',
-
             'menu_id' => 'secondary-menu',
-
             'menu_class' => 'menu clearfix',
-
             'fallback_cb' => 'none',
-
             'depth' => 5,
-
             'theme_location' => 'secondary-menu',
-
         );
 
         wp_nav_menu( apply_filters( 'graphene_secondary_menu_args', $args ) );

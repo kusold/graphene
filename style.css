@@ -4822,3 +4822,21 @@ h3.author-post-list {
 	height: 32px; 
 
 }
+
+
+
+/* GiveCamp Changes */
+
+@font-face {
+  font-family: 'Pontano Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Pontano Sans'), local('PontanoSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/pontanosans/v1/gTHiwyxi6S7iiHpqAoiE3OY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
+}
+
+#profiles{}
+#secondary-nav{clear:both;}
+#top_search {overflow:hidden;float:left;}
+#top_search input {float:none;display:inline;margin-right:3px;}
+#top_search button {float:none;display:inline;vertical-align:middle;}
+#logo{color:#fff;}

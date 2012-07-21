@@ -60,9 +60,7 @@ global $graphene_settings;
 
         <div id="top-bar">
 
-          <div id="space" class="grid_11">
-            &nbsp;
-          </div>
+          <div id="SearchRssContainer">
 
           <?php if ( ( $search_box_location = $graphene_settings['search_box_location'] ) && $search_box_location == 'top_bar' || $search_box_location == '' ) : ?>
 
@@ -84,15 +82,7 @@ global $graphene_settings;
 
           </div>
 
-          <?php
-
-          /**
-
-           * Retrieves our custom search form.
-
-           */
-
-          ?>
+          </div>
 
 
           
@@ -100,8 +90,8 @@ global $graphene_settings;
         <?php do_action( 'graphene_top_bar' ); ?>
 
         <div id ="secondary-nav">
-          <div id="logo" class="grid_5">
-            logo
+          <div id="logo" class="grid_4">
+            <img src="<?php echo get_bloginfo('template_directory');?>/images/gercf_logo.png">
           </div>
                 <?php
 
@@ -110,7 +100,7 @@ global $graphene_settings;
         $args = array(
             'container' => 'div',
             'container_id' => '',
-            'container_class' => 'grid_8',
+            'container_class' => 'grid_7',
             'menu_id' => 'secondary-menu',
             'menu_class' => 'menu',
             'fallback_cb' => 'none',

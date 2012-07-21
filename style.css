@@ -4834,10 +4834,14 @@ h3.author-post-list {
   src: local('Pontano Sans'), local('PontanoSans-Regular'), url(http://themes.googleusercontent.com/static/fonts/pontanosans/v1/gTHiwyxi6S7iiHpqAoiE3OY5mlVXtdNkpsMpKkrDXP4.woff) format('woff');
 }
 
-#top-bar{height:auto;}
-#profiles{}
+#top-bar{height:auto;position:relative;background:#fff none;padding:5px 0}
+#SearchRssContainer{position:absolute;right:0;}
+#profiles{padding-top:0;margin-top:-4px;}
+#secondary-menu{padding:40px 0 0 0;}
+#secondary-menu li a{color:#666;font-weight:bold;}
 #secondary-nav{clear:both;overflow:hidden}
-#top_search {overflow:hidden;float:left;}
+#secondary-nav ul li{clear:both;overflow:hidden}
+#top_search {overflow:hidden;float:left;margin-top:0;}
 #top_search input {float:none;display:inline;margin-right:3px;}
 #top_search button {float:none;display:inline;vertical-align:middle;}
 #logo{color:#fff;}

@@ -4845,3 +4845,7 @@ h3.author-post-list {
 #top_search input {float:none;display:inline;margin-right:3px;}
 #top_search button {float:none;display:inline;vertical-align:middle;}
 #logo{color:#fff;}
+
+div.anythingSlider.activeSlider .anythingWindow {border:none;}
+.anythingBase{ font-size: 2.5em; line-height: 1.5em;}
+.header_title{ display: none;}

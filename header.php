@@ -38,7 +38,7 @@ global $graphene_settings;
 
 <body <?php body_class(); ?>>
 
-
+<?php add_filter('widget_text', 'do_shortcode'); ?>
 
 <?php if ( !get_theme_mod( 'background_image', false) && !get_theme_mod( 'background_color', false) ) : ?>
 
@@ -140,7 +140,7 @@ global $graphene_settings;
 
     	
 
-        <?php 
+    <?php 
 
 			$header_img = '<img src="' . $header_img . '" alt="" class="header-img" />';
 

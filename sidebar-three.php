@@ -20,11 +20,11 @@ global $graphene_settings;
 
     
 
-<div id="sidebar2" <?php graphene_grid( 'sidebar', 1, 5, 4 ); ?>>
+<div id="sidebar3" <?php graphene_grid( 'sidebar', 1, 5, 4 ); ?>>
 
 
 
-	<?php do_action( 'graphene_before_sidebar2' ); ?>
+	<?php do_action( 'graphene_before_sidebar3' ); ?>
 
 
 
@@ -74,8 +74,8 @@ global $graphene_settings;
 
     
 
-    <?php do_action( 'graphene_after_sidebar2' ); ?>
+    <?php do_action( 'graphene_after_sidebar3' ); ?>
 
 
 
-</div><!-- #sidebar2 -->
+</div><!-- #sidebar3 -->

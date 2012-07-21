@@ -524,7 +524,7 @@ function graphene_widgets_init() {
 
 		register_sidebar(array( 'name' => __( 'Sidebar Three Widget Area', 'graphene' ),
 
-			'id' => 'sidebar-threewidget-area',
+			'id' => 'sidebar-three-widget-area',
 
 			'description' => __( 'The third sidebar widget area (will always be displayed on the right hand side of the *3 Column Layout*).', 'graphene' ),
 

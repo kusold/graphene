@@ -38,7 +38,7 @@ global $graphene_settings;
 
         }
 
-        if ( graphene_column_mode() == 'two-col-right-lowerlevel' ){
+        if ( graphene_column_mode() == 'two_col_right_lowerlevel' ){
 
             get_sidebar( 'three' );
 

@@ -258,7 +258,7 @@ function graphene_column_mode( $post_id = NULL ){
 
 		elseif ( is_page_template( 'template-twocolumnsright-lowerlevel.php' ) )
 
-			return 'two-col-right-lowerlevel';
+			return 'two_col_right_lowerlevel';
 
 	}
 

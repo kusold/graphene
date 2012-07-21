@@ -146,7 +146,8 @@ fieldset {
 
 .grid_15,
 
-.grid_16 {
+.grid_16,
+ {
 
     display: inline;
 
@@ -3972,7 +3973,6 @@ h3.author-post-list {
 
 
 #sidebar1,
-
 #sidebar2,
 #sidebar3 {
 
@@ -4940,3 +4940,7 @@ li.panel{overflow:hidden;width:100%;margin:0 auto;}
 li.panel .content{position:relative;}
 li.panel a{width:230px;top:20px;right:20px;position:absolute;}
 li.panel blockquote{border:0;float:left;width:660px;position:absolute;left:0;top:0;background:transparent none;}
+
+.sidebar3{
+	width: 280px;
+}

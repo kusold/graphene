@@ -3990,7 +3990,7 @@ h3.author-post-list {
 	padding-left: 0;
 
 }
-
+/*
 .sidebar h3 {
 
 	background: url(images/bg-sidebar-h3.png) left bottom repeat-x #3C9CD2;
@@ -4865,7 +4865,7 @@ div.anythingSlider.blockquote {display: inline;}
 
 #logo{color:#000;}
 #logo a{padding:10px 0 10px 10px;display:block;}
-#donate{padding:45px 0 0 0;text-align:right;}
+#donate{margin:45px 0 0 0;text-align:right;}
 #donate a, #donate-widget a {display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;
 
 font-family: Arial, Helvetica, sans-serif;
@@ -4920,6 +4920,13 @@ font-family: Arial, Helvetica, sans-serif;
 
 #content{background: #fff none;}
 #footer{background:#ebebeb none;border:0;padding-top:10px;}
+#footer-menu{text-align:center;padding-bottom:13px}
 #footer a, #footer a:visited{color:#404040;}
 #footer .footer-menu-wrap{float:left;}
-#copyright{float:right;}
+#copyright{float:none;text-align:center;}
+#copyright p{margin:0;}
+
+#sidebar {}
+#sidebar h3{color:#404040;padding:5px;}
+#sidebar_bottom{text-align:center;clear:both;}
+#sidebar_bottom .sidebar-wrap {width:100%!important}

@@ -804,7 +804,12 @@ fieldset {
 
 body {
 
-	background: url(images/bg_g.png) repeat #000 fixed;
+	background: #005585;
+	background: -moz-linear-gradient(top, #005585,  #ffffff); 
+	background: -webkit-gradient(linear, left top, left bottom, from(#005585), to(#ffffff));
+	filter: progid:DXImageTransform.Microsoft.gradient(StartColorstr='#005585', EndColorstr='#ffffff', GradientType=0); /* IE6/7/8 */
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr='#005585', endColorstr='#ffffff')"; /* IE8/9 */
+zoom: 1;
 
 	color: #2c2b2b;
 

@@ -4856,7 +4856,39 @@ div.anythingSlider { padding: 10px 45px 28px 30px !important;}
 #logo{color:#000;}
 #logo a{padding:10px 0 10px 10px;display:block;}
 #donate{padding:45px 0 0 0;text-align:right;}
-#donate a{display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;}
+#donate a{display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;
+
+font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	color: #ffffff;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+		top,
+		#bebec6 0%,
+		#797984);
+	background: -webkit-gradient(
+		linear, left top, left bottom, 
+		from(#bebec6),
+		to(#797984));
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	border: 1px solid #797984;
+	-moz-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	-webkit-box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	box-shadow:
+		0px 1px 3px rgba(000,000,000,0.5),
+		inset 0px 0px 1px rgba(255,255,255,1);
+	text-shadow:
+		0px -1px 0px rgba(000,000,000,0.7),
+		0px 1px 0px rgba(255,255,255,0.3);
+
+
+}
 
 #header .header_title{color:#fff;}
 
@@ -4869,7 +4901,7 @@ div.anythingSlider { padding: 10px 45px 28px 30px !important;}
 #header-menu li:nth-child(3){background:#966bdb}
 #header-menu li:nth-child(4){background:#15da9e}
 #header-menu li:nth-child(3) a,
-#header-menu li:nth-child(4) a{padding-top:19px;}
+#header-menu li:nth-child(4) a{padding-top:21px;}
 
 #header-menu li a{padding:0;display:block;height:80px;font-size:16px;line-height:18px;padding:12px 0 0 0; text-shadow: 1px 1px 1px #000;}
 #header-menu li:hover a, 

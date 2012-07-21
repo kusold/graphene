@@ -337,7 +337,13 @@ global $graphene_settings;
 
             }
 
-        
+            /* Sidebar1 on the left side? */            
+
+            if ( in_array( graphene_column_mode(), array( 'two-col-right-lowerlevel' ) ) ){
+
+                get_sidebar('three');                
+
+            }        
 
         ?>
 

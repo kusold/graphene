@@ -42,7 +42,7 @@ global $graphene_settings;
 
 <?php if ( !get_theme_mod( 'background_image', false) && !get_theme_mod( 'background_color', false) ) : ?>
 
-<div class="bg-gradient">
+<div class="">
 
 <?php endif; ?>
 

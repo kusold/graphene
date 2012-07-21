@@ -4826,7 +4826,17 @@ h3.author-post-list {
 
 
 /* GiveCamp Changes */
-
+html{margin: 0 !important;background-color: #005585;}
+body{background:none;
+  background-color: #005585;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#005585)); /* Saf4+, Chrome */
+  background-image: -webkit-linear-gradient(top, #ffffff, #005585); /* Chrome 10+, Saf5.1+, iOS 5+ */
+  background-image:    -moz-linear-gradient(top, #ffffff, #005585); /* FF3.6+ */
+  background-image:      -o-linear-gradient(top, #ffffff, #005585); /* Opera 11.10+ */
+  background-image:         linear-gradient(to bottom, #ffffff, #005585);
+}
+.bg_gradient{background:transparent none;}
+  
 @font-face {
   font-family: 'Pontano Sans';
   font-style: normal;
@@ -4835,7 +4845,7 @@ h3.author-post-list {
 }
 
 #top-bar{height:auto;position:relative;background:#fff none;padding:5px 0}
-#SearchRssContainer{position:absolute;right:0;}
+#SearchRssContainer{position:absolute;right:0;padding:5px 0 0 0;}
 #profiles{padding-top:0;margin-top:-4px;}
 #secondary-menu{padding:57px 0 0 0;text-align:right;}
 #secondary-menu li a{color:#404040;font-weight:bold;font-size:14px;}
@@ -4907,3 +4917,6 @@ font-family: Arial, Helvetica, sans-serif;
 #header-menu li:hover a, 
 #header-menu li.current-menu-item a, 
 #header-menu li.current-menu-ancestor a{text-shadow: 0 0 0;}
+
+#content{background: #fff none;}
+#footer{background:#fff none;}

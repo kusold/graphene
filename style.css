@@ -4837,11 +4837,14 @@ h3.author-post-list {
 #top-bar{height:auto;position:relative;background:#fff none;padding:5px 0}
 #SearchRssContainer{position:absolute;right:0;}
 #profiles{padding-top:0;margin-top:-4px;}
-#secondary-menu{padding:40px 0 0 0;}
-#secondary-menu li a{color:#666;font-weight:bold;}
+#secondary-menu{padding:50px 0 0 0;}
+#secondary-menu li a{color:#666;font-weight:bold;font-size:14px;}
 #secondary-nav{clear:both;overflow:hidden}
 #secondary-nav ul li{clear:both;overflow:hidden}
 #top_search {overflow:hidden;float:left;margin-top:0;}
 #top_search input {float:none;display:inline;margin-right:3px;}
 #top_search button {float:none;display:inline;vertical-align:middle;}
-#logo{color:#fff;}
+#logo{color:#000;}
+#logo a{padding:10px 0 10px 10px;display:block;}
+#donate{padding:45px 0 0 0;text-align:right;}
+#donate a{display:block;padding:10px;font-weight:bold;font-size:20px;text-align:center;}

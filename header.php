@@ -91,7 +91,9 @@ global $graphene_settings;
 
         <div id ="secondary-nav">
           <div id="logo" class="grid_4">
-            <img src="<?php echo get_bloginfo('template_directory');?>/images/gercf_logo.png">
+            <a href="/">
+              <img src="<?php echo get_bloginfo('template_directory');?>/images/gercf_logo.png">
+            </a>
           </div>
                 <?php
 
@@ -100,7 +102,7 @@ global $graphene_settings;
         $args = array(
             'container' => 'div',
             'container_id' => '',
-            'container_class' => 'grid_7',
+            'container_class' => 'grid_9',
             'menu_id' => 'secondary-menu',
             'menu_class' => 'menu',
             'fallback_cb' => 'none',
@@ -109,8 +111,10 @@ global $graphene_settings;
         );
 
         wp_nav_menu( apply_filters( 'graphene_secondary_menu_args', $args ) );
-
         ?>
+          <div id="donate" class="grid_3">
+            <a href="http://galvin.local/?page_id=9">Donate</a>
+          </div>
             </div>
         </div>
 

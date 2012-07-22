@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Three columns, 2 sidebars
+ * Template Name: * Second and Third Level
  *
  * A custom page template with custom sidebars.
  *

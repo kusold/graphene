@@ -63,16 +63,12 @@
 						<?php /* The full content */ ?>
 			            <?php the_content(); ?>
 			        </div>
-			        <?php if ( $left ) : ?>
-    				<div id="pageleft" class="column">
+			        <div id="pageleft" class="column">
     					<?php echo $left; ?>
-    				<?php endif; ?>
     				</div>
-    				<?php if ( $right ) : ?>
     				<div id="pageright" class="column">
     					<?php echo $right; ?>
     				</div>
-    				<?php endif; ?>
 				</div>
 				<div id="pagefooter"></div>
 			<?php else : ?>

@@ -5461,6 +5461,11 @@ blockquote p {
 }
 
 
+blockquote p:last-child {
+    text-indent: 0;
+}
+
+
 
 blockquote cite {
 

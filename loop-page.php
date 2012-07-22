@@ -54,11 +54,27 @@
 
 		<?php /* Post content */ ?>
 		<div class="entry-content clearfix">
-			<?php if ( is_page_template('template-onecolumn.php') ) : ?>
+			<?php if ( is_page_template('template-onecolumn-threecolumn.php') ) : ?>
+				<?php $left = get_field('left_sidebar'); ?>
+				<?php $right = get_field('right_sidebar'); ?>
 
-				<?php /* The full content */ ?>
-	            <?php the_content(); ?>
-
+				<div id="pagecontainer">
+    				<div id="pagecenter" class="column">
+						<?php /* The full content */ ?>
+			            <?php the_content(); ?>
+			        </div>
+			        <?php if ( $left ) : ?>
+    				<div id="pageleft" class="column">
+    					<?php echo $left; ?>
+    				<?php endif; ?>
+    				</div>
+    				<?php if ( $right ) : ?>
+    				<div id="pageright" class="column">
+    					<?php echo $right; ?>
+    				</div>
+    				<?php endif; ?>
+				</div>
+				<div id="pagefooter"></div>
 			<?php else : ?>
 				<?php do_action( 'graphene_before_page_content' ); ?>
 

@@ -4,7 +4,7 @@
 
  * Convert a hex decimal color code to its RGB equivalent and vice versa
 
- */                                                                                                
+ */
 
 function graphene_rgb2hex( $c ){
 
@@ -34,7 +34,7 @@ function graphene_rgb2hex( $c ){
 
       }else $out = false;
 
-             
+
 
    }elseif (preg_match("/^[0-9]+(,| |.)+[0-9]+(,| |.)+[0-9]+$/i", $c) ){
 
@@ -50,19 +50,19 @@ function graphene_rgb2hex( $c ){
 
             $e[$i] = dechex( ( $e[$i] <= 0)?0:( ( $e[$i] >= 255)?255:$e[$i]) );
 
-             
+
 
          for( $i = 0; $i<3; $i++)
 
             $out .= ( (strlen( $e[$i]) < 2)?'0':'' ).$e[$i];
 
-                 
+
 
          $out = strtoupper( $out);
 
    }else $out = false;
 
-         
+
 
    return $out;
 
@@ -92,7 +92,7 @@ function graphene_hex_addition( $hex, $num ){
 
 	$hex = graphene_rgb2hex( implode( ',', $rgb ) );
 
-	
+
 
 	return $hex;
 
@@ -108,11 +108,11 @@ function graphene_hex_addition( $hex, $num ){
 
  * @param boolean $hooksonly
 
- * @return array 
+ * @return array
 
  */
 
-function graphene_get_action_hooks( $hooksonly = false ) {    
+function graphene_get_action_hooks( $hooksonly = false ) {
 
 
 
@@ -124,7 +124,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 	}
 
-	
+
 
 	// Get the cached action hooks list, if available
 
@@ -136,9 +136,9 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 		$hooks = get_transient( 'graphene-action-hooks' );
 
-		
 
-	if ( $hooks ) 
+
+	if ( $hooks )
 
 		return $hooks;
 
@@ -146,7 +146,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 		$hooks = array();
 
-	
+
 
     // as all the hooks are defined in php files get a list of the themes php files
 
@@ -168,7 +168,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 			$content = implode( '', $content );
 
-			
+
 
             if ($content !== false) {
 
@@ -188,7 +188,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 					}
 
-                }                                
+                }
 
             }
 
@@ -196,7 +196,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
     }
 
-	
+
 
 	// Cache the found action hooks as WordPress transients
 
@@ -208,7 +208,7 @@ function graphene_get_action_hooks( $hooksonly = false ) {
 
 		set_transient( 'graphene-action-hooks', $hooks, 60*60*24 );
 
-		
+
 
     return $hooks;
 
@@ -226,7 +226,7 @@ function graphene_column_mode( $post_id = NULL ){
 
     global $graphene_settings;
 
-    
+
 
     // Check the front-end template
 
@@ -235,6 +235,10 @@ function graphene_column_mode( $post_id = NULL ){
 		if ( is_page_template( 'template-onecolumn.php' ) )
 
 			return 'one_column';
+
+        elseif ( is_page_template( 'template-onecolumn-threecolumn.php' ) )
+
+            return 'one_column';
 
 		elseif ( is_page_template( 'template-twocolumnsleft.php' ) )
 
@@ -262,13 +266,13 @@ function graphene_column_mode( $post_id = NULL ){
 
 	}
 
-		
+
 
 	/* Check the template in Edit Page screen in admin */
 
 	if ( is_admin() || $post_id ){
 
-		
+
 
 		if ( ! $post_id ){
 
@@ -276,11 +280,11 @@ function graphene_column_mode( $post_id = NULL ){
 
 		}
 
-		
+
 
 		$page_template = get_post_meta( $post_id, '_wp_page_template', true );
 
-		
+
 
 		if ( $page_template != 'default' ){
 
@@ -300,7 +304,7 @@ function graphene_column_mode( $post_id = NULL ){
 
 	}
 
-    
+
 
 	// Return the settings for BBPress column mode if viewing a BBPress page
 
@@ -308,11 +312,11 @@ function graphene_column_mode( $post_id = NULL ){
 
 		return $graphene_settings['bbp_column_mode'];
 
-	
 
-	// Return the settings as defined in the theme options 
 
-    return $graphene_settings['column_mode']; 
+	// Return the settings as defined in the theme options
+
+    return $graphene_settings['column_mode'];
 
 }
 
@@ -352,7 +356,7 @@ function disect_it( $var = NULL, $exit = true, $comment = false){
 
 	} else {
 
-		echo '<strong>ERROR:</strong> You must pass a variable as argument to the <code>disect_it()</code> function.';	
+		echo '<strong>ERROR:</strong> You must pass a variable as argument to the <code>disect_it()</code> function.';
 
 	}
 
@@ -386,11 +390,11 @@ if ( ! function_exists( 'graphene_substr' ) ) :
 
 function graphene_substr( $string, $start = 0, $length = '', $suffix = '' ){
 
-	
+
 
 	if ( $length == '' ) return $string;
 
-	
+
 
 	if ( strlen( $string ) > $length ) {
 
@@ -398,7 +402,7 @@ function graphene_substr( $string, $start = 0, $length = '', $suffix = '' ){
 
 	} else {
 
-		$trunc_string = $string;	
+		$trunc_string = $string;
 
 	}
 
@@ -446,7 +450,7 @@ function graphene_truncate_words( $string, $word_count, $suffix = '...' ){
 
       $trunc_string = implode( ' ', array_slice( $string_array, 0, $word_count ) ) . $suffix;
 
-	  
+
 
    return apply_filters( 'graphene_truncate_words', $trunc_string, $string, $word_count, $suffix );
 
@@ -494,7 +498,7 @@ function graphene_is_wp_version( $is_ver = '' ) {
 
         if( !isset( $wp_ver[$i] ) ) array_push( $wp_ver, 0 );
 
- 
+
 
     foreach( $is_ver as $i => $is_val )
 

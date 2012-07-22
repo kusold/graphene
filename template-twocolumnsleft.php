@@ -18,5 +18,4 @@
 	the_post();
     get_template_part( 'loop', 'page' );
     ?>
-
 <?php get_footer(); ?>

@@ -260,10 +260,6 @@ function graphene_column_mode( $post_id = NULL ){
 
 			return 'two_col_right_lowerlevel';
 
-		elseif ( is_page_template( 'template-threecolumnscenter-lowerlevel.php' ) )
-
-			return 'three_col_center_lowerlevel';
-
 	}
 
 		

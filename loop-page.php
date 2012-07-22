@@ -67,6 +67,7 @@
     					<?php echo $left; ?>
     				</div>
     				<div id="pageright" class="column">
+    					<h3>In this section:</h3>
     					<?php echo $right; ?>
     				</div>
 				</div>

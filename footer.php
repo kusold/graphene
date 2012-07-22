@@ -18,18 +18,18 @@
 
 
 
-?>  
+?>
 
 <?php do_action( 'graphene_bottom_content' ); ?>
 
     </div><!-- #content-main -->
 
-    
+
 
 
     <?php
 
-    
+
 
         /* Sidebar 2 on the right side? */
 
@@ -45,7 +45,7 @@
 
         }
 
-		
+
 
 		/* Sidebar 1 on the right side? */
 
@@ -55,10 +55,10 @@
 
         }
 
-    
+
 
     ?>
-    
+
 
 
 
@@ -74,7 +74,7 @@
 
 <div id="footer" class="container_16">
 
-    
+
 
 
 
@@ -116,7 +116,7 @@
 
     <?php endif; ?>
 
-	
+
 
   <?php /* Get the footer widget area */ ?>
 
@@ -131,23 +131,24 @@
 
             <p>
 
+            <span style="font-size: 14px">25221 Miles Road, Suite F, Warrensville Heights, OH 44128, 216-514-1600</span><br />
             <?php printf( '&copy; %1$s %2$s.', date( 'Y' ), get_bloginfo( 'name' ) ); ?>
 
             </p>
 
         <?php elseif ( ! $graphene_settings['show_cc'] ) : ?>
 
-        	<?php 
+        	<?php
 
 				if ( ! stristr( $graphene_settings['copy_text'], '</p>' ) ) { $graphene_settings['copy_text'] = wpautop( $graphene_settings['copy_text'] ); }
 
-				echo $graphene_settings['copy_text']; 
+				echo $graphene_settings['copy_text'];
 
 			?>
 
  	    <?php endif; ?>
 
-        
+
 
         <?php if ( $graphene_settings['show_cc'] ) : ?>
 
@@ -171,7 +172,7 @@
 
 <?php endif; ?>
 
-    
+
 
 
 

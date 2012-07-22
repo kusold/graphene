@@ -8934,7 +8934,7 @@ h3.author-post-list {
 
 
 
-	text-decoration: none;
+	text-decoration: underline;
 
 
 
@@ -9846,7 +9846,7 @@ font-family: Arial, Helvetica, sans-serif;
 
 #content{background: #fff none;}
 
-#footer{background:#ebebeb none;border:0;padding-top:10px;}
+#footer{background:#fff none;border:0;padding-top:10px;}
 
 #footer-menu{text-align:center;padding-bottom:13px}
 
@@ -9988,3 +9988,7 @@ div.entry-content table tbody tr td blockquote {
     font-size: .80em;
 }
 
+
+#pageright ul {
+    margin: 10px 0 10px 25px;
+}

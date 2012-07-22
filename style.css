@@ -9884,7 +9884,7 @@ li.panel .content{position:relative;}
 
 li.panel a{width:230px;top:20px;right:20px;position:absolute;}
 
-li.panel blockquote{border:0;float:left;width:660px;position:absolute;left:0;top:0;background:transparent none;}
+li.panel blockquote{border:0;float:left;width:660px;position:absolute;left:0;top:0;background:transparent none; line-height: 1.3em;}
 
 
 
